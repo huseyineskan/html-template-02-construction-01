@@ -1,0 +1,150 @@
+$primary-color : #FABD52;
+$second-color : #DEDCDE;
+$third-color : #68626B;
+$fourth-color : #F29268;
+$wall-color : #403842;
+$bg-color : #5A535D;
+
+$header-height : 30px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+@mixin align($x){
+    display: flex;
+    align-items: center;
+    justify-content: $x;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: $primary-color;
+    height: $header-height;
+    padding: 0 15px;
+    @include align(space-between);
+
+    span{
+        font-weight: bold;
+        color: $wall-color
+    }
+
+    a{
+        background-color: rgba($bg-color, .6);
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        @include align(center);
+        font-weight: 500;
+    }
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: $wall-color;
+    @include align(center);
+    
+    a{
+        text-decoration: none;
+        color: $second-color;
+    }
+
+    .window{
+        display: block;
+        position: relative;
+        background-color: $bg-color;
+        border-radius: 20px;
+        max-width: 900px;
+        width: 900px;
+        height: auto;
+        margin: 0 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 10px rgba(0,0,0, 0.3);
+        transition: max-height 600ms;  
+        overflow: hidden;
+        max-height: 90vh;
+    }
+
+    .shrink{
+        transition: max-height 600ms;  
+        overflow: hidden;
+        max-height: $header-height;
+    }
+}
+
+section{
+    .image{
+        text-align: center;
+        margin: 20px 0;
+        width: 100%;
+        padding: 0 20px;
+
+        svg{
+            max-width: 100%;
+        }
+    }
+
+    .text{
+        @include align(center);
+        flex-direction: column;
+        margin-top: 15px;
+        font-size: 13px;
+        color: $second-color;
+
+        p{
+            margin-top: 7px;
+            line-height: 17px;
+            text-align: center;
+        }
+
+        span{
+            color: $fourth-color;
+        }
+
+        a{
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: $primary-color;
+            border-radius: 20px;
+            color: $wall-color;
+            font-weight: bold;
+        }
+
+    }    
+}
+
+.fil0 {fill: $third-color;fill-rule:nonzero}
+.fil1 {fill: $second-color;fill-rule:nonzero}
+.fil2 {fill: $primary-color; fill-rule:nonzero}
+.fil3 {fill:#403842;fill-rule:nonzero}
+.fil4 {fill: rgba($wall-color, .3);fill-rule:nonzero}
+.fil5 {fill:#524B57;fill-rule:nonzero}
+.fil6 {fill:#FEE1A2;fill-rule:nonzero}
+.fil7 {fill: $fourth-color;fill-rule:nonzero}
+.fil8 {fill: rgba($wall-color, .2);fill-rule:nonzero}
+.fil9 {fill:#78767E;fill-rule:nonzero}
+.fil10 {fill:#FEFEFE;fill-rule:nonzero}
+.fil11 {fill:#8E8D92;fill-rule:nonzero}
+.fil12 {fill:none;fill-rule:nonzero}
+.fil13 {fill:#7F7D85;fill-rule:nonzero}
+.fil14 {fill: rgba(255,255,255, 0.4);fill-rule:nonzero}
+.fil15 {fill:rgba(255,255,255, 0.4);fill-rule:nonzero}
+.fil16 {fill:#514953;fill-rule:nonzero}
+.fil17 {fill:#5D5761;fill-rule:nonzero}
+.fil18 {fill:#BABBBC;fill-rule:nonzero}
+
+@media only screen and (min-width: 800px){
+    .text {
+        h1{
+            font-size: 25px !important;
+        }
+        
+        p,a{
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #FABD52;
+  height: 30px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header span {
+  font-weight: bold;
+  color: #403842;
+}
+
+.header a {
+  background-color: rgba(90, 83, 93, 0.6);
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #403842;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body a {
+  text-decoration: none;
+  color: #DEDCDE;
+}
+
+body .window {
+  display: block;
+  position: relative;
+  background-color: #5A535D;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 900px;
+  height: auto;
+  margin: 0 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: max-height 600ms;
+  transition: max-height 600ms;
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+body .shrink {
+  -webkit-transition: max-height 600ms;
+  transition: max-height 600ms;
+  overflow: hidden;
+  max-height: 30px;
+}
+
+section .image {
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+section .image svg {
+  max-width: 100%;
+}
+
+section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #DEDCDE;
+}
+
+section .text p {
+  margin-top: 7px;
+  line-height: 17px;
+  text-align: center;
+}
+
+section .text span {
+  color: #F29268;
+}
+
+section .text a {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #FABD52;
+  border-radius: 20px;
+  color: #403842;
+  font-weight: bold;
+}
+
+.fil0 {
+  fill: #68626B;
+  fill-rule: nonzero;
+}
+
+.fil1 {
+  fill: #DEDCDE;
+  fill-rule: nonzero;
+}
+
+.fil2 {
+  fill: #FABD52;
+  fill-rule: nonzero;
+}
+
+.fil3 {
+  fill: #403842;
+  fill-rule: nonzero;
+}
+
+.fil4 {
+  fill: rgba(64, 56, 66, 0.3);
+  fill-rule: nonzero;
+}
+
+.fil5 {
+  fill: #524B57;
+  fill-rule: nonzero;
+}
+
+.fil6 {
+  fill: #FEE1A2;
+  fill-rule: nonzero;
+}
+
+.fil7 {
+  fill: #F29268;
+  fill-rule: nonzero;
+}
+
+.fil8 {
+  fill: rgba(64, 56, 66, 0.2);
+  fill-rule: nonzero;
+}
+
+.fil9 {
+  fill: #78767E;
+  fill-rule: nonzero;
+}
+
+.fil10 {
+  fill: #FEFEFE;
+  fill-rule: nonzero;
+}
+
+.fil11 {
+  fill: #8E8D92;
+  fill-rule: nonzero;
+}
+
+.fil12 {
+  fill: none;
+  fill-rule: nonzero;
+}
+
+.fil13 {
+  fill: #7F7D85;
+  fill-rule: nonzero;
+}
+
+.fil14 {
+  fill: rgba(255, 255, 255, 0.4);
+  fill-rule: nonzero;
+}
+
+.fil15 {
+  fill: rgba(255, 255, 255, 0.4);
+  fill-rule: nonzero;
+}
+
+.fil16 {
+  fill: #514953;
+  fill-rule: nonzero;
+}
+
+.fil17 {
+  fill: #5D5761;
+  fill-rule: nonzero;
+}
+
+.fil18 {
+  fill: #BABBBC;
+  fill-rule: nonzero;
+}
+
+@media only screen and (min-width: 800px) {
+  .text h1 {
+    font-size: 25px !important;
+  }
+  .text p, .text a {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
